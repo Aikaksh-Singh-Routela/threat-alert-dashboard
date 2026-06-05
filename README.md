@@ -1,4 +1,3 @@
-markdown
 # 🚨 Threat Alert Dashboard
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -148,16 +147,6 @@ GitHub: Aikaksh-Singh-Routela/threat-alert-dashboard
 Author: Aikaksh Singh Routela
 
 Built with ⚡, 🐍, and ⚛️ by Aikaksh Singh Routela
-
-text
-
-## What's Improved:
-
-| Before | After |
-|--------|-------|
-| Plain text | ✅ Badges for tech stack |
-| Basic description | ✅ Detailed features table |
-| No architecture | ✅ Visual architecture diagram |
 | Minimal setup | ✅ Complete installation guide |
 | No API docs | ✅ Detailed API endpoints |
 | No project structure | ✅ Clear folder hierarchy |
