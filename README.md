@@ -1,3 +1,4 @@
+markdown
 # 🚨 Threat Alert Dashboard
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -21,7 +22,6 @@ A **full-stack threat alert management system** for cybersecurity monitoring. Th
 | **📱 Responsive Design** | Works on desktop, tablet, and mobile |
 
 ## 🏗️ Architecture
-
 ┌─────────────────────────────────────────────────────────────┐
 │ USER BROWSER │
 │ (React Frontend) │
@@ -40,6 +40,7 @@ A **full-stack threat alert management system** for cybersecurity monitoring. Th
 │ (User & Alert Storage) │
 └─────────────────────────────────────────────────────────────┘
 
+text
 
 ## 🛠️ Tech Stack
 
@@ -71,11 +72,11 @@ pip install -r requirements.txt
 
 # Run the server
 python main.py
-
+Frontend Setup
+bash
 cd ../threat_alert_dashboard
 npm install
 npm start
-
 🔌 API Endpoints
 Method	Endpoint	Description
 POST	/register	Create new user account
@@ -84,7 +85,8 @@ GET	/alerts	Get all alerts for authenticated user
 POST	/alerts	Create new alert
 DELETE	/alerts/{id}	Delete specific alert
 GET	/stats	Get alert statistics
-
+Example API Request
+bash
 # Login
 curl -X POST http://localhost:8000/login \
   -H "Content-Type: application/json" \
@@ -93,3 +95,70 @@ curl -X POST http://localhost:8000/login \
 # Get alerts (with JWT token)
 curl -X GET http://localhost:8000/alerts \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
+📁 Project Structure
+text
+threat-alert-dashboard/
+├── threat_alert_api/          # FastAPI backend
+│   ├── main.py                # Application entry point
+│   ├── database.py            # SQLite database setup
+│   ├── models.py              # Pydantic models
+│   ├── auth.py                # JWT authentication
+│   └── requirements.txt       # Python dependencies
+├── threat_alert_dashboard/    # React frontend
+│   ├── src/
+│   │   ├── components/        # React components
+│   │   ├── App.js             # Main application
+│   │   └── index.js           # Entry point
+│   └── package.json           # Node dependencies
+└── README.md                  # Documentation
+🚀 Deployment
+Deploy Backend to Render
+bash
+# Create render.yaml or connect GitHub repo to Render
+# Set environment variables:
+# - SECRET_KEY: your_jwt_secret_key
+Deploy Frontend to Vercel
+bash
+npm run build
+vercel --prod
+📊 Sample Dashboard
+The dashboard displays:
+
+Total Alerts: All alerts in the system
+
+Suspicious Alerts: High-risk threats
+
+Normal Alerts: Routine events
+
+Alert Percentage: Ratio of suspicious to total alerts
+
+🔒 Environment Variables
+Variable	Description
+SECRET_KEY	JWT signing key (required)
+DATABASE_URL	SQLite database path (optional)
+🤝 Contributing
+Feel free to submit issues and pull requests.
+
+📄 License
+MIT License
+
+🔗 Links
+GitHub: Aikaksh-Singh-Routela/threat-alert-dashboard
+
+Author: Aikaksh Singh Routela
+
+Built with ⚡, 🐍, and ⚛️ by Aikaksh Singh Routela
+
+text
+
+## What's Improved:
+
+| Before | After |
+|--------|-------|
+| Plain text | ✅ Badges for tech stack |
+| Basic description | ✅ Detailed features table |
+| No architecture | ✅ Visual architecture diagram |
+| Minimal setup | ✅ Complete installation guide |
+| No API docs | ✅ Detailed API endpoints |
+| No project structure | ✅ Clear folder hierarchy |
+| Basic README | ✅ Professional documentation |
