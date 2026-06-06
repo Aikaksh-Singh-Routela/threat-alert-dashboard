@@ -10,6 +10,9 @@
 
 A **full-stack threat alert management system** for cybersecurity monitoring. This application provides real-time threat detection and alert management with secure authentication.
 
+🔗 Links
+GitHub: Aikaksh-Singh-Routela/threat-alert-dashboard
+
 ### Key Features
 
 | Feature | Description |
@@ -140,9 +143,6 @@ Feel free to submit issues and pull requests.
 
 📄 License
 MIT License
-
-🔗 Links
-GitHub: Aikaksh-Singh-Routela/threat-alert-dashboard
 
 Author: Aikaksh Singh Routela
 
